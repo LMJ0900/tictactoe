@@ -13,6 +13,9 @@ export default function Calculator() {
     expectedReturn: 6,
     duration: 10,
   });
+
+  const inputIsValid = userInput.duration >= 1;
+
   function handleChange(inputIdentifier:string, newValue:number){
     setUserInput((prevUserInput) =>{
         return{
@@ -25,7 +28,7 @@ export default function Calculator() {
   return (<>
     <Header />
     <UserInput userInput={userInput} onChange={handleChange} />
-    <Result input={userInput}/>
+    {inputIsValid ? <Result input={userInput}/> : <p className="center">Please enter a duration greater than zero</p>}
   </>
   )
 }

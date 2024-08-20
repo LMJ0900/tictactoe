@@ -21,6 +21,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/components/tictac/gameboard.jsx", "src/app/tictac/page.jsx", "src/components/tictac/Log.jsx", "src/components/tictac/winningCombination.js", "src/components/cal/headerjtsx", "src/components/cal/result.tsx", "src/components/cal/header.tsx", "src/components/cal/userInput.tsx", "src/app/cal/page.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/components/tictac/gameboard.jsx", "src/app/tictac/page.jsx", "src/components/tictac/Log.jsx", "src/components/tictac/winningCombination.js", "src/components/cal/headerjtsx", "src/components/cal/result.tsx", "src/components/cal/header.tsx", "src/components/cal/userInput.tsx", "src/app/cal/page.tsx", "src/index.js", "src/components/games/player.js", "src/components/games/timerChallenge/timerChallenge.jsx"],
   "exclude": ["node_modules"]
 }
